@@ -71,6 +71,7 @@ btn.addEventListener('click', () => {
             const colors = data.colors;
             colors.map(color => {
                 const colorDiv = document.createElement('div');
+                colorDiv.classList.add('colorDiv');
                 colorDiv.style.width = '11vw';
                 colorDiv.style.height = '45vh';
                 colorDiv.style.display = 'inline-block';

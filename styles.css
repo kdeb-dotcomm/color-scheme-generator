@@ -80,4 +80,77 @@ body {
     letter-spacing: 1px;
     color: #ffffff;
 }
+/* ====== MEDIA QUERIES ====== */
+
+/* For small devices (phones, < 600px) */
+@media (max-width: 600px) {
+    .container {
+        width: 90vw;
+        height: auto;
+        padding: 15px;
+    }
+
+    .inputContainer {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .colorPicker,
+    .select,
+    .button {
+        width: 100%;
+    }
+
+    .colorSchemeContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .colorDiv {
+        width: 80vw !important;
+        height: 120px !important;
+    }
+}
+
+/* For tablets (600px - 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .container {
+        width: 80vw;
+        height: auto;
+        padding: 20px;
+    }
+
+    .inputContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .colorDiv {
+        width: 35vw !important;
+        height: 200px !important;
+    }
+}
+
+/* For desktops ( > 900px ) */
+@media (min-width: 901px) {
+    .container {
+        width: 60vw;
+        height: 70vh;
+    }
+
+    .colorSchemeContainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .colorDiv {
+        width: 11vw !important;
+        height: 45vh !important;
+    }
+}
 
